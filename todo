@@ -1,0 +1,9 @@
+- Create and deploy an EC2 instance into a VPC and fingerprint services 
+- Create a mapping between the compliance rules and the retrieved settings
+- Generate evidence showing that the control is satisfied in terminal, then in a small app or web page
+
+So first step would be to get a single service working. Start with EC2 w/ Security Hub compliance rules:
+    - Deploy the mentioned EC2 instance
+    - Gather settings from all deployed EC2 instances (besides our finger printer. Run aws ec2 describe-instances)
+    - Create a mapping of the settings to the specified ruless
+    - Produce evidence for the rules using the gathered settings and meta data
